@@ -23,8 +23,8 @@ jobs:
       run: |
         pip install -r MLOps/requirements/test_requirements.txt
     - name: Train pipeline
-	    run: |
-	      python MLOps/titanic_model/train_pipeline.py
-	  - name: Test with pytest
-		  run: |
+      run: |
+	python MLOps/titanic_model/train_pipeline.py
+    - name: Test with pytest
+      run: |
         pytest
