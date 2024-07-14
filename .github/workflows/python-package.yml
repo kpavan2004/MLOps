@@ -21,7 +21,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        pip install -r MLOps/requirements/test_requirements.txt
+        pip install -r requirements/test_requirements.txt
     - name: Train pipeline
       run: |
         python titanic_model/train_pipeline.py
